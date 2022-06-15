@@ -1,0 +1,113 @@
+#:import hex kivy.utils.get_color_from_hex 
+FloatLayout:
+    canvas:
+        Color:
+            
+            rgba: hex("#f97c8d")
+        RoundedRectangle:
+            pos: self.pos
+            size: self.size 
+                
+    Image: 
+    	source:"Home.png" 	 
+    	size_hint_x: 0.59 
+    	pos_hint: {'center_x':0.5,'center_y':0.85}       
+	MDFloatLayout:
+	    radius: [100, 100, 0, 0]
+	    md_bg_color: 1,1,1,1
+	    size_hint_y: .7
+	    MDFloatLayout:
+	    	size_hint: .85,.14
+	    	pos_hint: {'center_x':0.5,'center_y':0.7}	 	   
+	    		
+	    	canvas:
+	    		Color:
+	    			rgba: hex("#f9e3dc")
+	    		RoundedRectangle:
+	    			pos: self.pos
+	    			size: self.size	   
+	    			radius:[25] 	
+	    MDFloatLayout:
+	    	size_hint: .85,.14
+	    	pos_hint: {'center_x':0.5,'center_y':0.4}	 	   
+	    		
+	    	canvas:
+	    		Color:
+	    			rgba: hex("#f9e3dc")
+	    		RoundedRectangle:
+	    			pos: self.pos
+	    			size: self.size	   
+	    			radius:[25]
+	    	    			
+	    MDTextButton:
+	    	text: '[size=45][font=fonts/VarelaRound-Regular.ttf]Sing in[/size]'	 
+	    	pos_hint: {"center_x": .6, "center_y": .05}
+	    	color:hex("#f97c8d")
+	    	custom_color: hex("#f97c8d")
+	    	markup:True				
+	    MDLabel:
+	    	text: '[size=45][font=fonts/VarelaRound-Regular.ttf]already a member?[/size]'	    		   
+	    	markup:True	
+	    	pos_hint: {"center_x": .6, "center_y": .05}	    		    		
+	    MDLabel: 
+	    	text: '[size=60][font=fonts/M.otf]Sign Up[/size]'	   
+	    	markup:True
+	    	pos_hint: {"center_x": .6, "center_y": .89}	       
+	    MDLabel:
+	    	
+	    	text: '[size=45][font=fonts/M.otf]Email[/size]'
+	    	markup:True
+	    	pos_hint: {"center_x": .6, "center_y": .8}	  	 
+	    MDLabel:
+	    	
+	    	text: '[size=45][font=fonts/M.otf]Password[/size]'
+	    	markup:True
+	    	pos_hint: {"center_x": .6, "center_y": .5}	    		
+	    MDFillRoundFlatButton:		 
+	    	text: '[size=45][font=fonts/VarelaRound-Regular.ttf]Naxt[/size]'
+	    	markup:True
+	    	pos_hint: {'center_x':0.5,'center_y':0.18}	
+	    	size_hint: 0.85, .12
+	    	font_size: "18sp"	 
+	    	md_bg_color: hex("#f97c8d")
+	    MDIconButton:
+	    	icon: "email-open-outline"
+	    	pos_hint: {'center_x':0.15,'center_y':0.705}
+	    	theme_icon_color: "Custom"	    	
+	    	icon_color: app.theme_cls.primary_color
+	    TextInput: 
+	    	hint_text: "Email"
+	    	size_hint: 1,None
+	    	icon_right: 'key-variant'
+	    	pos_hint: {'center_x':0.5,'center_y':0.7}	    	
+	    	multilien:False
+	    	cursor_color: hex("f49bac")
+	    	cursor_width : "2sp"
+	    	foreground_color: hex("f49bac")
+	    	background_color: 0,0,0,0
+	    	padding:15
+	    	size_hint_x:.6
+	    	font_name:'fonts/VarelaRound-Regular.ttf'
+	    	font_size:'18sp' 	 
+	    MDIconButton:
+	    	icon: "lock"
+	    	pos_hint: {'center_x':0.15,'center_y':0.405}
+	    	theme_icon_color: "Custom"	    	
+	    	icon_color: app.theme_cls.primary_color	    	   	 	   
+	    TextInput: 
+	    	hint_text: "password"
+	    	password:True
+	    	size_hint: 1,None
+	    	icon_right: 'key-variant'
+	    	pos_hint: {'center_x':0.5,'center_y':0.4}	    	
+	    	multilien:False
+	    	cursor_color: hex("f49bac")
+	    	cursor_width : "2sp"
+	    	foreground_color: hex("f49bac")
+	    	background_color: 0,0,0,0
+	    	padding:15
+	    	size_hint_x:.6
+	    	font_name:'fonts/VarelaRound-Regular.ttf'
+	    	font_size:'18sp' 	    	 	   	    	
+	    	 	 	    	    		    	
+	    	 	 	    	    		    	 	 	    	    		    	 	 	    	    		    	
